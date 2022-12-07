@@ -60,6 +60,6 @@ public class Temperature
 
     public String toString()
     {
-       return "highTemp: " + highTemp + " " + tempScale +  "\nlowTemp: " + lowTemp + " " + tempScale;
+       return "highTemp: " + roundToNearestTenth(highTemp) + " " + tempScale +  "\nlowTemp: " + roundToNearestTenth(lowTemp) + " " + tempScale;
     }
 }
