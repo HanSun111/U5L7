@@ -35,13 +35,14 @@ public class Temperature
         if(tempScale.equals("F")){
            highTemp = convertFtoC(highTemp);
            lowTemp = convertFtoC(lowTemp);
-
+           tempScale = "C";
         }
     }
     public void changeToF(){
         if(tempScale.equals("C")){
             highTemp = convertCtoF(highTemp);
             lowTemp = convertCtoF(lowTemp);
+            tempScale = "F";
         }
     }
 
@@ -49,7 +50,7 @@ public class Temperature
 
     // 3. Add your private static helper rounding "utility" method here:
     private static double roundToNearestTenth(double num){
-        return Math.round(num * 100.0) / 100.0;
+        return Math.round(num * 10.0) / 10.0;
     }
 
     // 4. Complete the toString method below (using your static helper method)

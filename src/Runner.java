@@ -48,6 +48,5 @@ public class Runner
 
         double fahrenheitTemp = Temperature.convertCtoF(12.6);
         System.out.println(fahrenheitTemp);
-
     }
 }
